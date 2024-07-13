@@ -7,7 +7,7 @@ import "proto/transaction/cart.proto";
 option go_package = "github.com/jpmoraess/grpc-proto/protogen/go/payment";
 
 message PaymentRequest {
-  transaction.Cart = 1;
+  Cart cart = 1;
   string currency = 2;
   uint32 total_amount = 3 [json_name = "total_amount"];
   uint32 tax = 4;
